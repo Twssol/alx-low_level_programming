@@ -5,34 +5,23 @@
  */
 int main(void)
 {
-int x = 48;
-int y, z, a;
+int x, y;
 
-for (; x <= 57;)
+for (x = 0; x <= 98; x++)
 {
-for (y = 48; y <= 57; y++)
+for (y = x + 1; y <= 99; y++)
 {
-for (z = 48; z <= 57; z++)
-{
-for (a = 48; a <= 57; a++)
-{
-if (y < a || x < z)
-{
-putchar(x);
-putchar(y);
+putchar((x / 10) + '0');
+putchar((x % 10) + '0');
 putchar(' ');
-putchar(z);
-putchar(a);
-if (x != 57 || y != 56 || z != 57 || a != 57)
+putchar((y / 10) + '0');
+putchar((y % 10) + '0');
+if (x != 98 || y != 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
-}
-}
-}
-x++;
 }
 putchar('\n');
 return (0);
