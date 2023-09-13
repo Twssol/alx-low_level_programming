@@ -13,5 +13,5 @@ n = -1 * n;
 }
 n = n % 10;
 putchar(n + 48);
-putchar(n + 48);
+return (n);
 }
