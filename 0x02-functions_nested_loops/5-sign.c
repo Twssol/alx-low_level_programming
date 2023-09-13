@@ -19,7 +19,7 @@ return (-1);
 }
 else
 {
--putchar('0');
+-putchar(48);
 return (0);
 }
 }
