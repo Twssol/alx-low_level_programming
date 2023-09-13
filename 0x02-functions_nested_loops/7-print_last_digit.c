@@ -12,6 +12,6 @@ if (n < 0)
 n = -1 * n;
 }
 n = n % 10;
-printf("%d",n);
+return (n);
 return (n);
 }
