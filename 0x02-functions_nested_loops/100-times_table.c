@@ -20,7 +20,6 @@ z = x * y;
 if (z < 10)
 {
 _putchar(' ');
-_putchar(z + 48);
 }
 if (z < 100)
 {
