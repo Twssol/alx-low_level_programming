@@ -20,20 +20,20 @@ z = x * y;
 if (z < 10)
 {
 _putchar(' ');
-_putchar(' ');
-_putchar(z + 48);
 }
-else if (z < 100)
+if (z < 100)
 {
 _putchar(' ');
-_putchar((z / 10) + 48);
-_putchar((z % 10) + 48);
 }
-else
+if (z >= 100)
 {
 _putchar((z / 100) + 48);
-_putchar(((z % 100) / 10) + 48);
-_putchar(((z % 100) % 10) + 48);
+_putchar((z / 100) % 10 + 48);
+}
+else if (z < 10 && z > 100)
+{
+_putchar((z / 10) + 48);
+_putchar((z % 10) + 48);
 }
 _putchar('\n');
 }
