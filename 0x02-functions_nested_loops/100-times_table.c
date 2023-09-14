@@ -17,20 +17,16 @@ for (y = 1; y <= n; y++)
 _putchar(',');
 _putchar(' ');
 z = x * y;
-if (z < 10)
-{
+if (z <= 9)
 _putchar(' ');
-}
-if (z < 100)
-{
+if (z <= 99)
 _putchar(' ');
-}
 if (z >= 100)
 {
 _putchar((z / 100) + 48);
 _putchar((z / 100) % 10 + 48);
 }
-else if (z < 10 && z > 100)
+else if (z <= 99 && z >= 10)
 {
 _putchar((z / 10) + 48);
 _putchar((z % 10) + 48);
