@@ -13,7 +13,7 @@ for (i = 0; i < 25; i++)
 {
 x = x + sum;
 sum = sum + x;
-printf("%llu, %llu", x, sum);
+printf("%lld, %lld", x, sum);
 if (sum != 20365011074)
 printf(", ");
 }
