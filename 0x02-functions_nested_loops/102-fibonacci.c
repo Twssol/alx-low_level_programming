@@ -6,14 +6,14 @@
 int main(void)
 {
 int i;
-long long int x = 0;
-long long int sum  = 1;
+long  int x = 0;
+long int sum  = 1;
 
 for (i = 0; i < 25; i++)
 {
 x = x + sum;
 sum = sum + x;
-printf("%lld, %lld", x, sum);
+printf("%ld, %ld", x, sum);
 if (sum != 20365011074)
 printf(", ");
 }
