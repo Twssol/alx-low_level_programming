@@ -6,18 +6,16 @@
 int main(void)
 {
 int i;
-int sum  = 0;
+long long int x = 0;
+long long int sum  = 1;
 
-printf("%d, %d, ", 1, 2);
-for (i = 1; i <= 50; i++)
+for (i = 0; i < 25; i++)
 {
-sum = sum + i;
-if (sum / 10 == 1 || sum / 10 == 2)
-{
-printf("%d", sum);
-if (sum != 28)
+x = x + sum;
+sum = sum + x;
+printf("%llu, %llu", x, sum);
+if (sum != 20365011074)
 printf(", ");
-}
 }
 printf("\n");
 return (0);
