@@ -16,5 +16,6 @@ void print_line(int n)
 		}
 		_putchar ('\n');
 	}
-_putcahr ('\n);
+else
+_putchar('\n');
 }
