@@ -20,7 +20,7 @@ if (c > 9)
 }
 else
 _putchar(num);
-}
 _putchar('\n');
+}
 }
 }
