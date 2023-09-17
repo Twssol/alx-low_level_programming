@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
- * main-prints num from 1 to 100 with fizz , buzz petern
- * Return: 0 Always
+ * main-prints numbers from 1 to 100 with fizz,buzz for 3,5 multipules
+ * Return: 0 Alwayes
  */
 int main(void)
 {
@@ -11,10 +11,10 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		printf("FizzBuzz ");
-		else if (i % 5 == 0)
-		printf("Buzz ");
 		else if (i % 3 == 0)
-		printf("Fizz ");
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
 		else
 		printf("%d ", i);
 	}
