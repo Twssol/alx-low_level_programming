@@ -6,31 +6,15 @@
  */
 int count(int n)
 {
-	if (n > -9 && n < 9)
-		return (1);
-	else if ((n > -100 && n < -9) || (n > 9 && n < 100))
-		return (2);
-	else if ((n > -1000 && n < -99) || (n > 99 && n < 1000))
-		return (3);
-	else if ((n > -10000 && n < -999) || (n > 999 && n > 10000))
-		return (4);
-	else if ((n > -100000 && n < -9999) || (n > 9999 && n < 100000))
-		return (5);
-	else if ((n > -1000000 && n < -99999) || (n > 99999 && n < 1000000))
-		return (6);
-	else if ((n > -10000000 && n < -999999) || (n > 999999 && n < 10000000))
-		return (7);
-	else if ((n > -100000000 && n < -9999999) || (n > 9999999 && n < 100000000))
-		return (8);
-	else if (n > -1000000000 && n < -99999999)
-		return (9);
-	else if (n > 99999999 && n < 1000000000)
-		return (9);
-	else if (n > -10000000000 && n < -999999999)
-		return (10);
-	else if (n > 999999999 && n < 10000000000)
-		return (10);
-return (0);
+	int i = 10;
+	int x = 1;
+
+	while (n % i != n)
+	{
+		x = x + 1;
+		i = i * 10;
+	}
+	return (x);
 }
 
 /**
