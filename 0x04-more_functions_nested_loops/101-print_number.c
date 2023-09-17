@@ -39,6 +39,7 @@ void print_number(int n)
 {
 	int i = 100;
 	int c, x;
+	int y = 1;
 
 	if (n < 0)
 		_putchar('-');
@@ -48,7 +49,12 @@ void print_number(int n)
 		_putchar(x + 48);
 	else
 	{
-		_putchar((x / 10) + 48);
+		while (c != 0)
+		{
+			y = y * 10;
+			c--;
+		}
+		_putchar((x / y) + 48);
 	while ((c - 2) > 0)
 	{
 		_putchar(((x / i) % 10) + 48);
