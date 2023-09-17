@@ -37,24 +37,22 @@ return (n);
  */
 void print_number(int n)
 {
-	int i, c;
+	int i, c, x;
 
 	if (n < 0)
-	{
 		_putchar('-');
-		_abs(n);
-	}
+	x = _abs(n);
 	c = count(n);
 	if (c == 1)
-		_putchar(n + 48);
+		_putchar(x + 48);
 	else
 	{
-		_putchar((n / 10) + 48);
+		_putchar((x / 10) + 48);
 		for (i = 100; (i / i) <= (c - 2); i = i * 10)
 		{
-			_putchar(((n / i) % 10) + 48);
+			_putchar(((x / i) % 10) + 48);
 		}
-		_putchar((n % 10) + 48);
+		_putchar((x % 10) + 48);
 	}
 }
 
