@@ -53,22 +53,22 @@ return (n);
  */
 void print_number(int n)
 {
-	int i, c, x;
+	int i, c;
 
 	if (n > 0)
 		_putchar('-');
-	x = _abs(n);
+	_abs(n);
 	c = count(n);
 	if (c == 1)
-		_putchar(x + 48);
+		_putchar(n + 48);
 	else
 	{
-		_putchar((x / 10) + 48);
+		_putchar((n / 10) + 48);
 		for (i = 100; (i / i) <= (c - 2); i = i * 10)
 		{
-			_putchar(((x / i) % 10) + 48);
+			_putchar(((n / i) % 10) + 48);
 		}
-		_putchar((x % 10) + 48);
+		_putchar((n % 10) + 48);
 	}
 }
 
