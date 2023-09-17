@@ -49,7 +49,7 @@ void print_number(int n)
 		_putchar(x + 48);
 	else
 	{
-		while (c != 0)
+		while (c != 1)
 		{
 			y = y * 10;
 			c--;
