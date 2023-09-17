@@ -55,12 +55,12 @@ void print_number(int n)
 			c--;
 		}
 		_putchar((x / y) + 48);
-	while ((c - 2) > 0)
-	{
-		_putchar(((x / i) % 10) + 48);
-		i = i * 10;
-		c--;
-	}
+		while ((c - 2) != 0)
+		{
+			_putchar(((x / i) % 10) + 48);
+			i = i * 10;
+			c--;
+		}
 		_putchar((x % 10) + 48);
 	}
 }
