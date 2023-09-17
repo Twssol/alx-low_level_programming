@@ -14,6 +14,6 @@ void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
 void print_number(int n);
-int count(int n);
+int count(long int n);
 int _abs(int n);
 #endif

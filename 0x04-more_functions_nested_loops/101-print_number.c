@@ -4,7 +4,7 @@
  * @n: The number
  * Return: Numbers of digits
  */
-int count(int n)
+int count(long int n)
 {
 	int i = 10;
 	int x = 1;
@@ -49,11 +49,12 @@ void print_number(int n)
 	else
 	{
 		_putchar((x / 10) + 48);
-		for (c; (c - 2) > 0 ; c--)
-		{
-			_putchar(((x / i) % 10) + 48);
-			i = i * 10;
-		}
+	while ((c - 2) > 0)
+	{
+		_putchar(((x / i) % 10) + 48);
+		i = i * 10;
+		c--;
+	}
 		_putchar((x % 10) + 48);
 	}
 }
