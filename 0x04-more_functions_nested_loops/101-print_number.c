@@ -39,9 +39,11 @@ void print_number(int n)
 {
 	int i, c;
 
-	if (n > 0)
+	if (n < 0)
+	{
 		_putchar('-');
-	_abs(n);
+		_abs(n);
+	}
 	c = count(n);
 	if (c == 1)
 		_putchar(n + 48);
