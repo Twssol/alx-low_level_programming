@@ -4,7 +4,7 @@
  * @n: The number
  * Return: Numbers of digits
  */
-int count(long int n)
+int count(int n)
 {
 	int i = 10;
 	int x = 1;
