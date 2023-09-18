@@ -7,18 +7,15 @@ void rev_string(char *s)
 {
 	int i = 0;
 	int x, y;
-	
-	for (; s[i] != '\0';)
+
+	while (s[i] != '\0')
 	{
 		i++;
 	}
 	for (x = 0; x <= i / 2; x++)
 	{
-	if (x != 5)
-	{
 		y = s[x];
 		s[x] = s[i - 1 - x];
 		s[i - 1 - x] = y;
-	}
 	}
 }
