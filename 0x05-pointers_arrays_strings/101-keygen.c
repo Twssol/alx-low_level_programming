@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdlib>
+#include<stdlib.h>
 #include<time.h>
 /**
  * main-generates random valid passwords
@@ -15,7 +15,7 @@ int main(void)
 	{
 		c = rand() % 128;
 		sum += c;
-		putchat(c);
+		putchar(c);
 	}
 	putchar(2772 - sum);
 	return (0);
